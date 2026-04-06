@@ -19,6 +19,7 @@ info:
     - cve2025
     - fortinet
     - fortivoice
+    - cisa_kev
 payloads:
   - library: http
     steps:
@@ -49,5 +50,5 @@ payloads:
               regex: "^(200|400|405|500)$"
               reverse: false
             content:
-              regex: "FortiVoice|FortiMail|FortiGate|Fortinet|fortivoice|hostcheck"
+              regex: "(?i)(FortiVoice|FortiMail|FortiNDR|FortiRecorder|FortiCamera|hostcheck)"
               reverse: false
